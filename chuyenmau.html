@@ -15,7 +15,12 @@
     <button onclick="chuyenmau()">Chuyển Màu</button>
     
 
-  <script src="./Js/chuyenmau.js"></script>
+  <script>
+    function chuyenmau() {
+    var random = Math.floor(Math.random() * 16777215).toString(16);
+    var mau = document.querySelector('.main');
+    mau.style.background = '#' + random;
+}</script>
 
 </body>
 
