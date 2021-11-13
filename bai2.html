@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         var arr = [];
+        var item;
+        while (item != -1) {
+            item = parseInt(prompt('Hãy nhập vào cân nặng'));
+
+            if (item == -1) {
+                break;
+            }
+            arr.push(item);
+        }
+        var arr2 = [];
+        
+        var suma = 0;
+
+        var sumb = 0;
+
+        for (var i = 0; i < arr.length; i++) {
+            if (i % 2 == 0) {
+                suma += arr[i];
+            }
+            if (i % 2 == 1) {
+                sumb += arr[i];
+            }
+        }
+        arr2.push(suma);
+
+        arr2.push(sumb);
+        
+        console.log(arr2);
+    </script>
+</body>
+</html>
